@@ -1,0 +1,38 @@
+#body-portfolio {
+    background-color: map-get($color, "black");
+}
+// CONTAINER
+#main-portfolio {
+    min-height: 100vh;
+    #heading-portfolio {
+        @include heading;
+    }
+    #title-portfolio {
+        @include title;
+    }
+    #proyects-portfolio {
+        .proyects-portfolio__card {
+            .card {
+                img {}
+                .card-body {
+                    .card-anchor {
+                        text-decoration: none;
+                        font-family: $font;
+                        color: map-get($color, "secondary-text");
+                        transition: 200ms;
+                        &:hover {
+                            color: map-get($color, "secondary" );
+                        }
+                        &:focus {
+                            color: map-get($color, "secondary" );
+                        }
+                    }
+                    .card-title {
+                        font-family: $font;
+                        color: map-get($color, "primary" );
+                    }
+                }
+            }
+        }
+    }
+}

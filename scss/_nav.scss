@@ -1,0 +1,53 @@
+
+:root {
+    --bs-dark-rgb: 4,4,2;
+}
+
+.navbar {
+    .bg-dark {
+        background-color: map-get($color, "black");
+    }
+    .navbar-button {
+        background-color: map-get($color, "secondary");
+        color: black;
+    }
+
+    .navbar-button:focus {
+        box-shadow: none;
+    }
+
+    span.navbar-toggler-icon {
+        color: map-get($color, "black" );
+    }
+
+    .nav-logo {
+        a::before {
+            content: "<";
+            color: map-get($color, "primary");
+        }
+    }
+    .nav-logo {
+        a::after {
+            content: "/>";
+            color: map-get($color, "primary");
+        }
+    }
+    #navbarNav {
+        .nav-link:not(.active) {
+            transition: 250ms;
+            color: map-get($color, "secondary-text" );
+        }
+        .active::after {
+            display: block;
+            content: "";
+            border: 1px solid map-get($color, "primary");
+        }
+        .nav-link:hover:not(.active) {
+            transform: scale(1.05);
+            color: map-get($color, "primary" );
+        }
+        .nav-link:focus:not(.active) {
+            color: map-get($color, "primary" );
+        }
+    }
+}

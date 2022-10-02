@@ -1,0 +1,91 @@
+#body-home {
+    background-image: url(../assets/bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: map-get($color, "black" );
+}
+#main-home {
+    min-height: 100vh;
+    #main-pic {
+        img {
+            height: 290px;
+            @include mv (1200px) {
+                height: 250px;
+            }
+            @include mv (576px) {
+                height: 210px;
+            }
+            transition: 200ms;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+    #main-headings {
+        display: block;
+        text-align: center;
+        #heading-before {
+            margin: 0;
+            font-size: 45px;
+            color: map-get($color, "white");
+            @include mv (1200px) {
+                font-size: 35px;
+            }
+            @include mv (576px) {
+                font-size: 24px;
+            }
+        }
+        #heading {
+            margin: 0;
+            font-size: 60px;
+            font-weight: 700;
+            color: map-get($color, "primary" );
+            @include mv (1200px) {
+                font-size: 50px;
+            }
+            @include mv (576px) {
+                font-size: 32px;
+            }
+        }
+        #heading-after {
+            margin: 0;
+            font-size: 45px;
+            color: map-get($color, "white");
+            @include mv (1200px) {
+                font-size: 45px;
+            }
+            @include mv (576px) {
+                font-size: 24px;
+            }
+        }
+        #know-button {
+            padding: 8px 16px;
+            font-size: 22px;
+
+            background: transparent;
+            color: map-get($color, "primary");
+            border: 1px solid map-get($color, "primary");
+            border-radius: 2em;
+
+            transition: 250ms;
+
+            @include mv (576px) {
+                font-size: 14px;
+            }
+
+            .anchor {
+                text-decoration: none;
+                color: map-get($color, "primary" );
+            }
+
+            &:focus {
+                transform: scale(0.95);
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

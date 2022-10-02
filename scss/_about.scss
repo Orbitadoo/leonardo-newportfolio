@@ -1,0 +1,80 @@
+#body-about {
+    background-color: map-get($color, "black");
+}
+#main-about {
+    min-height: 100vh;
+    // HEADING ABOUT
+    #section-about {
+        #article-heading {
+            .h2-sections {
+                color: map-get($color, "white");
+            }
+            .h2-sections::after {
+                content: "";
+                display: block;
+                width: 150px;
+                height: 5px;
+                background: map-get($color, "primary" );
+                margin: 10px auto 40px;
+            }
+        }
+
+        #article-about {
+            // WHAT ABOUT ME?
+            .descriptions {
+                .descriptions__h3 {
+                    color: map-get($color, "secondary-text" );
+                }
+                .descriptions__h2 {
+                    color: map-get($color, "white" );
+                }
+                .descriptions__paragraph {
+                    color: map-get($color, "secondary-text");
+                }
+                .descriptions__button {
+                    box-sizing: content-box;
+                    text-decoration: none;
+                    padding: 15px;
+
+                    color: map-get($color, "black");
+                    background-color: map-get($color, "primary");
+                    a {
+                        color: map-get($color, "black" );
+                        text-decoration: none;
+                    }
+                    // HOVER DEL BUTTON
+                    &:hover {
+                        background-color: map-get($color, "white" );
+                    }
+                    &:focus {
+                        background-color: map-get($color, "secondary" );
+                    }
+                }
+            }
+            // SKILLS ICONS
+            .skills {
+                .skills__items {
+                    .skills__items__h3 {
+                        color: map-get($color, "secondary-text" );
+                        font-size: 28px;
+                    }
+                    .skills__items__icon {
+                        background-color: map-get($color, "background-cards");
+                        padding: 15px;
+                        font-size: 5em;
+                        color: map-get($color, "secondary-text");
+                        transition: 300ms;
+
+                        &:hover {
+                            color: map-get($color, "white" );
+                        }
+                        // UNDER ICON TEXT
+                        .under-icon {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

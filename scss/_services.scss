@@ -1,0 +1,51 @@
+#body-services {
+    background-color: map-get($color, "black");
+}
+// CONTAINER
+#main-services {
+    min-height: 100vh;
+    #section-heading {
+        // TITULO DE LA PÁGINA
+        @include heading;
+    }
+    #section-title {
+        // COMENTARIO DE LA PAGINA
+        @include title;
+    }
+    #section-services {
+        // CARD
+        .services {
+            background-color: map-get($color, "background-cards");
+            padding: 12px;
+            transition: 300ms;
+            border-bottom: 5px solid transparent;
+            // ICONS
+            .services__icon {
+                font-size: 2.5em;
+                color: map-get($color, "secondary-text");
+                transition: 300ms;
+            }
+            // TITULOS DE LA CARD
+            .services__title {
+                font-size: 1.2em;
+                color: map-get($color, "white");
+                font-weight: bold;
+            }
+            // PARRAFOS DE LA CARD
+            .services__paragraph {
+                font-size: 16px;
+                color: map-get($color, "secondary-text");
+                margin: 0 auto;
+                width: 90%;
+            }
+            // HOVER DEL BACKGROUND
+            &:hover {
+                transition: border 0.3s;
+                border-bottom: 5px solid map-get($color, "primary" );
+                .services__icon {
+                    color: map-get($color, "primary" );
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+#body-contact {
+    background-color: map-get($color, "black");
+}
+
+#main-contact {
+    min-height: 100vh;
+    #section-heading {
+        @include heading;
+    }
+    #section-title {
+        @include title;
+    }
+    #section-items {
+        .item {
+            padding: 30px;
+            border-radius: 4rem;
+            background-color: map-get($color, "background-cards");
+            transition: 200ms;
+            a {
+             text-decoration: none;
+             color: map-get($color, "white" );
+             transition: 200ms;
+             i {
+                font-size: 4rem;
+             }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                a {
+                    color: map-get($color, "primary" );
+                }
+            }
+        }
+    }
+}

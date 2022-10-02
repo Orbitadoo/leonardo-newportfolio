@@ -1,0 +1,31 @@
+/* MIXIN MEDIA QUERY */
+@mixin mv ($medida : 480px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+// MIXIN DE LOS H3 DE CADA SECCION
+@mixin heading () {
+    .heading {
+        color: map-get($color, "white");
+        font-weight: bold;
+    }
+    .heading::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 5px;
+        background: map-get($color, "primary" );
+        margin: 10px auto 40px;
+    }
+}
+
+// MIXIN DE LOS TITULOS DE CADA SECCION
+@mixin title () {
+    .title {
+        color: map-get($color, "secondary-text");
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

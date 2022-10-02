@@ -1,0 +1,23 @@
+@import "./var";
+@import "./mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+/*=========================NAVBAR=========================*/
+@import "./nav";
+/*=========================HOME=========================*/
+@import "./home";
+/*=========================ABOUT=========================*/
+@import "./about";
+/*=========================SERVICES=========================*/
+@import "./services";
+/*=========================PORTFOLIO=========================*/
+@import "./portfolio";
+/*=========================CONTACT=========================*/
+@import "./contact";
