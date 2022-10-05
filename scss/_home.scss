@@ -29,6 +29,7 @@
             margin: 0;
             font-size: 45px;
             color: map-get($color, "white");
+            // RESPONSIVE FONT SIZE
             @include mv (1200px) {
                 font-size: 35px;
             }
@@ -41,6 +42,7 @@
             font-size: 60px;
             font-weight: 700;
             color: map-get($color, "primary" );
+            // RESPONSIVE FONT SIZE
             @include mv (1200px) {
                 font-size: 50px;
             }
@@ -52,6 +54,7 @@
             margin: 0;
             font-size: 45px;
             color: map-get($color, "white");
+            // RESPONSIVE FONT SIZE
             @include mv (1200px) {
                 font-size: 45px;
             }
@@ -69,7 +72,7 @@
             border-radius: 2em;
 
             transition: 250ms;
-
+            // RESPONSIVE BUTTON SIZE
             @include mv (576px) {
                 font-size: 14px;
             }

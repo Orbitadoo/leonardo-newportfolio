@@ -1,12 +1,14 @@
-
+// VARIABLES MODIFICADAS DE BOOTSTRAP
 :root {
     --bs-dark-rgb: 4,4,2;
 }
-
+// NAVBAR
 .navbar {
+    // BACKGROUND
     .bg-dark {
         background-color: map-get($color, "black");
     }
+    // BUTTON
     .navbar-button {
         background-color: map-get($color, "secondary");
         color: black;
@@ -15,11 +17,11 @@
     .navbar-button:focus {
         box-shadow: none;
     }
-
+    // RESPONSIVE ICON
     span.navbar-toggler-icon {
         color: map-get($color, "black" );
     }
-
+    // <orbitado/>
     .nav-logo {
         a::before {
             content: "<";
@@ -32,6 +34,7 @@
             color: map-get($color, "primary");
         }
     }
+    // MENU
     #navbarNav {
         .nav-link:not(.active) {
             transition: 250ms;
