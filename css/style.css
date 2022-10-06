@@ -357,6 +357,12 @@
 #main-contact #form-contact #form .form-content {
   width: 600px;
 }
+#main-contact #form-contact #form .form-content input[type] {
+  color: #f5f5f5;
+}
+#main-contact #form-contact #form .form-content textarea {
+  color: #f5f5f5;
+}
 #main-contact #form-contact #form .form-content .form__label {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
