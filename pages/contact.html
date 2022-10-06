@@ -56,46 +56,75 @@
         </nav>
     </header>
     <!-- CONTACT -->
-    <main id="main-contact" class="container text-center d-flex flex-column justify-content-center">
+    <main id="main-contact" class="text-center d-flex flex-column justify-content-center">
         <!-- CONTACT HEADING -->
-        <section id="section-heading">
+        <section id="section-heading" class="container">
             <h2 class="heading mt-5 pt-5 mt-md-0 pt-md-0 mt-lg-0 pt-lg-0">
                 Contact
             </h2>
         </section>
         <!-- CONTACT COMMENTARY -->
-        <section id="section-title">
+        <section id="section-title" class="container">
             <h3 class="title">
                 Feel free to contact me!
             </h3>
         </section>
-        <!-- CONTACT ITEMS -->
-        <section id="section-items" class="container mt-5 text-center d-flex flex-wrap justify-content-center gap-5">
-            <!-- gmail -->
-            <div class="item">
-                <a href="mailto:leonardojuanpablov@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i></a>
-            </div>
-            <!-- linkedin -->
-            <div class="item">
-                <a href="https://www.linkedin.com/in/leonardo-juan-pablo-valdez-013672224/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-            <!-- whatsapp -->
-            <div class="item">
-                <a href="https://api.whatsapp.com/send?phone=543816134310&text=Hi%20Leonardo,%20I%20would%20like%20to%20talk%20about%20a%20project..." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <!-- github -->
-            <div class="item">
-                <a href="https://github.com/Orbitadoo/" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <!-- twitter -->
-            <div class="item">
-                <a href="https://twitter.com/juanpaavaldez" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <!-- instagram -->
-            <div class="item">
-                <a href="https://www.instagram.com/juanpabloovaldez/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="form-contact" class="container">
+            <form action="varlidar.php" method="get" enctype="multipart/form-data">
+                <div class="d-flex flex-column justify-content-center align-items-center" id="form">
+                    <!-- NOMRBRE -->
+                    <div class="form-content d-flex flex-column flex-wrap justify-content-center">
+                        <label class="form__label" for="nombre">Name</label>
+                        <input class="form__input" id ="nombre" name="nombre" type="text" minlength="3" maxlength="50" required autofocus autocomplete="off">
+                    </div>
+                    <!-- MAIL -->
+                    <div class="form-content d-flex flex-column flex-wrap justify-content-center">
+                        <label class="form__label" for="mail">Email</label>
+                        <input class="form__input" id="mail" name="mail" type="email" required>
+                    </div>
+                    <!-- COMENTTARY -->
+                    <div class="form-content d-flex flex-column flex-wrap justify-content-center">
+                        <label class="form__label" for="comentario">Message</label>
+                        <textarea class="form__textarea" name="comentario" id="comentario"></textarea>
+                    </div>
+                    <!-- BUTTONS -->
+                    <div class="form-content mt-4" class="d-flex flex-column flex-wrap justify-content-center">
+                        <input id="enviar" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
         </section>
+        <footer id="footer-contact" class="container-fluid d-flex align-items-center mt-5">
+            <!-- CONTACT ITEMS -->
+            <section id="section-items" class="container text-center d-flex flex-wrap justify-content-center gap-5">
+                <!-- gmail -->
+                <div class="item">
+                    <a href="mailto:leonardojuanpablov@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i></a>
+                </div>
+                <!-- linkedin -->
+                <div class="item">
+                    <a href="https://www.linkedin.com/in/leonardo-juan-pablo-valdez-013672224/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <!-- whatsapp -->
+                <div class="item">
+                    <a href="https://api.whatsapp.com/send?phone=543816134310&text=Hi%20Leonardo,%20I%20would%20like%20to%20talk%20about%20a%20project..." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <!-- github -->
+                <div class="item">
+                    <a href="https://github.com/Orbitadoo/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!-- twitter -->
+                <div class="item">
+                    <a href="https://twitter.com/juanpaavaldez" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <!-- instagram -->
+                <div class="item">
+                    <a href="https://www.instagram.com/juanpabloovaldez/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </section>
+        </footer>
+        
     </main>
 </body>
 </html>
