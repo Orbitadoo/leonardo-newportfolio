@@ -71,19 +71,29 @@
         </section>
         <!-- FORMULARIO DE CONTACTO -->
         <section id="form-contact" class="container">
-            <form class="form">
+            <!-- FORMULARIO -->
+            <form class="form d-flex flex-column">
                 <!-- NOMBRE -->
                 <div class="form__name">
-                    <input id="lbl-name" type="text" required>
-                    <label for="lbl-name" class="lbl-name">
+                    <input id="inp-name" class="inp-name" type="text" required>
+                    <label for="inp-name" class="lbl-name">
                         <span class="text-name">
                             Name
                         </span>
                     </label>
                 </div>
                 <!-- EMAIL -->
+                <div class="form__email">
+                    <input id="inp-email" type="email" required>
+                    <label for="inp-email" class="lbl-email">
+                        <span class="text-email">
+                            Email
+                        </span>
+                    </label>
+                </div>
             </form>
         </section>
+        <!-- FOOTER - CONTACTO -->
         <footer id="footer-contact" class="container-fluid d-flex align-items-center mt-5">
             <!-- CONTACT ITEMS -->
             <section id="section-items" class="container text-center d-flex flex-wrap justify-content-center gap-5">

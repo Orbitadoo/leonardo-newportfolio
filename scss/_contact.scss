@@ -4,11 +4,144 @@
 
 #main-contact {
     min-height: 100vh;
+    // ENCABEZADO
     #section-heading {
         @include heading;
     }
+    // COMENTARIO BREVE / TITULO
     #section-title {
         @include title;
     }
+    // FORMULARIO
+    #form-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .form {
+            width: 100%;
+            height: 150px;
+            max-width: 400px;
+            position: relative;
+            overflow: hidden;
+            // LABEL NOMBRE
+            .form__name {
+                width: 400px;
+                overflow: hidden;
+                // INPUT
+                #inp-name {
+                    width: 100%;
+                    height: 50px;
+                    background: none;
+                    color: #fff;
+                    padding-top: 20px;
+                    border: none;
+                    outline: 0px;
+                    position: absolute;
+                    bottom: 50%;
+                    left: 0;
+                }
+                // TEXT
+                .lbl-name {
+                    position: absolute;
+                    bottom: 50%;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid #c7c7c7;
+                }
+                // LINEA CELESTE
+                .lbl-name::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    width: 100%;
+                    height: 100%;
+                    border-bottom: 3px solid map-get($color, "primary");
+                    transform: translateX(-100%);
+                    transition: all 0.3s ease;
+                }
+                // SPAN DEL TEXTO
+                .text-name {
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    transition: all 0.3s ease;
+                    color: #fff;
+                }
+                // FOCUS ANIMATION
+                #inp-name:focus + .lbl-name .text-name, #inp-name:valid + .lbl-name .text-name {
+                    transform: translateY(-130%);
+                    font-size: 14px;
+                    color: map-get($color, "primary" );
+                }
+                // FOCUS ANIMATION
+                #inp-name:focus + .lbl-name::after, #inp-name:valid + .lbl-name::after  {
+                    transform: translateX(0%);
+                }
+            }
 
+            .form__email {
+                width: 400px;
+                overflow: hidden;
+                // INPUT
+                #inp-email {
+                    width: 100%;
+                    height: 50px;
+                    background: none;
+                    color: #fff;
+                    padding-top: 20px;
+                    border: none;
+                    outline: 0px;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                }
+                // TEXT
+                .lbl-email {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid #c7c7c7;
+                }
+                // LINEA CELESTE
+                .lbl-email::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    width: 100%;
+                    height: 100%;
+                    border-bottom: 3px solid map-get($color, "primary");
+                    transform: translateX(-100%);
+                    transition: all 0.3s ease;
+                }
+                // SPAN DEL TEXTO
+                .text-email {
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    transition: all 0.3s ease;
+                    color: #fff;
+                }
+                // FOCUS ANIMATION
+                #inp-email:focus + .lbl-email .text-email, #inp-email:valid + .lbl-email .text-email {
+                    transform: translateY(-130%);
+                    font-size: 14px;
+                    color: map-get($color, "primary" );
+                }
+                // FOCUS ANIMATION
+                #inp-email:focus + .lbl-email::after, #inp-email:valid + .lbl-email::after  {
+                    transform: translateX(0%);
+                }
+            }
+        }
+    }
 }
+    // FOOTER CONTACTO
+    #footer-contact {}
