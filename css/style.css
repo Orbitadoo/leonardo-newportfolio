@@ -369,7 +369,7 @@
 }
 #main-contact #form-contact .form {
   width: 100%;
-  height: 150px;
+  height: 250px;
   max-width: 400px;
   position: relative;
   overflow: hidden;
@@ -378,7 +378,7 @@
   width: 400px;
   overflow: hidden;
 }
-#main-contact #form-contact .form .form__name #inp-name {
+#main-contact #form-contact .form .form__name input {
   width: 100%;
   height: 50px;
   background: none;
@@ -387,19 +387,19 @@
   border: none;
   outline: 0px;
   position: absolute;
-  bottom: 50%;
+  bottom: 200px;
   left: 0;
 }
-#main-contact #form-contact .form .form__name .lbl-name {
+#main-contact #form-contact .form .form__name .lbl {
   position: absolute;
-  bottom: 50%;
+  bottom: 200px;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
   border-bottom: 1px solid #c7c7c7;
 }
-#main-contact #form-contact .form .form__name .lbl-name::after {
+#main-contact #form-contact .form .form__name .lbl::after {
   content: "";
   position: absolute;
   left: 0;
@@ -412,7 +412,7 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-#main-contact #form-contact .form .form__name .text-name {
+#main-contact #form-contact .form .form__name .text {
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -420,13 +420,13 @@
   transition: all 0.3s ease;
   color: #fff;
 }
-#main-contact #form-contact .form .form__name #inp-name:focus + .lbl-name .text-name, #main-contact #form-contact .form .form__name #inp-name:valid + .lbl-name .text-name {
+#main-contact #form-contact .form .form__name input:focus + .lbl .text, #main-contact #form-contact .form .form__name input:valid + .lbl .text {
   -webkit-transform: translateY(-130%);
           transform: translateY(-130%);
   font-size: 14px;
   color: #5FDBFF;
 }
-#main-contact #form-contact .form .form__name #inp-name:focus + .lbl-name::after, #main-contact #form-contact .form .form__name #inp-name:valid + .lbl-name::after {
+#main-contact #form-contact .form .form__name input:focus + .lbl::after, #main-contact #form-contact .form .form__name input:valid + .lbl::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -434,7 +434,7 @@
   width: 400px;
   overflow: hidden;
 }
-#main-contact #form-contact .form .form__email #inp-email {
+#main-contact #form-contact .form .form__email input {
   width: 100%;
   height: 50px;
   background: none;
@@ -443,19 +443,19 @@
   border: none;
   outline: 0px;
   position: absolute;
-  bottom: 10%;
+  bottom: 100px;
   left: 0;
 }
-#main-contact #form-contact .form .form__email .lbl-email {
+#main-contact #form-contact .form .form__email .lbl {
   position: absolute;
-  bottom: 10%;
+  bottom: 100px;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
   border-bottom: 1px solid #c7c7c7;
 }
-#main-contact #form-contact .form .form__email .lbl-email::after {
+#main-contact #form-contact .form .form__email .lbl::after {
   content: "";
   position: absolute;
   left: 0;
@@ -468,7 +468,7 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-#main-contact #form-contact .form .form__email .text-email {
+#main-contact #form-contact .form .form__email .text {
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -476,13 +476,87 @@
   transition: all 0.3s ease;
   color: #fff;
 }
-#main-contact #form-contact .form .form__email #inp-email:focus + .lbl-email .text-email, #main-contact #form-contact .form .form__email #inp-email:valid + .lbl-email .text-email {
+#main-contact #form-contact .form .form__email input:focus + .lbl .text, #main-contact #form-contact .form .form__email input:valid + .lbl .text {
   -webkit-transform: translateY(-130%);
           transform: translateY(-130%);
   font-size: 14px;
   color: #5FDBFF;
 }
-#main-contact #form-contact .form .form__email #inp-email:focus + .lbl-email::after, #main-contact #form-contact .form .form__email #inp-email:valid + .lbl-email::after {
+#main-contact #form-contact .form .form__email input:focus + .lbl::after, #main-contact #form-contact .form .form__email input:valid + .lbl::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+#main-contact #form-contact .form .form__message {
+  width: 400px;
+  overflow: hidden;
+}
+#main-contact #form-contact .form .form__message input {
+  width: 100%;
+  height: 50px;
+  background: none;
+  color: #fff;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+#main-contact #form-contact .form .form__message .lbl {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+#main-contact #form-contact .form .form__message .lbl::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #5FDBFF;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#main-contact #form-contact .form .form__message .text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+#main-contact #form-contact .form .form__message input:focus + .lbl .text, #main-contact #form-contact .form .form__message input:valid + .lbl .text {
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
+  font-size: 14px;
+  color: #5FDBFF;
+}
+#main-contact #form-contact .form .form__message input:focus + .lbl::after, #main-contact #form-contact .form .form__message input:valid + .lbl::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+#footer-contact #section-items .item a {
+  text-decoration: none;
+}
+#footer-contact #section-items .item a i {
+  color: #f5f5f5;
+  font-size: 2em;
+  background-color: #191919;
+  padding: 20px;
+  border-radius: 4em;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+#footer-contact #section-items .item a i:focus, #footer-contact #section-items .item a i:hover {
+  color: #5FDBFF;
+  -webkit-transform: scale(1.1)translateY(-30%);
+          transform: scale(1.1)translateY(-30%);
 }
