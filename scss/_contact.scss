@@ -20,21 +20,51 @@
         align-items: center;
         .form {
             width: 100%;
-            height: 250px;
+            height: 320px;
             max-width: 400px;
             position: relative;
             overflow: hidden;
             // LABEL NOMBRE
             .form__name {
-                @include formulario (200px);
+                @include formulario (270px);
             }
             // EMAIL
             .form__email {
-                @include formulario (100px);
+                @include formulario (170px);
             }
             // MESSAGE
             .form__message {
-                @include formulario (0px);
+                @include formulario (70px);
+            }
+            // BUTTON ENVIAR
+            .form__button {
+                input {
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                    
+                    padding: 5px 20px;
+
+                    color: map-get($color, "white");
+                    border: 1px solid map-get($color, "white");
+                    outline: none;
+                    background: transparent;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: map-get($color, "primary");
+                        border: 1px solid map-get($color, "primary");
+                    }
+
+                    &:focus {
+                        color: map-get($color, "black");
+                        font-weight: bold;
+                        background-color: map-get($color, "primary" );
+                        border: 1px solid map-get($color, "primary");
+                        transform: scale(0.9);
+                    }
+                }
             }
         }
     }

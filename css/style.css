@@ -369,7 +369,7 @@
 }
 #main-contact #form-contact .form {
   width: 100%;
-  height: 250px;
+  height: 320px;
   max-width: 400px;
   position: relative;
   overflow: hidden;
@@ -387,12 +387,12 @@
   border: none;
   outline: 0px;
   position: absolute;
-  bottom: 200px;
+  bottom: 270px;
   left: 0;
 }
 #main-contact #form-contact .form .form__name .lbl {
   position: absolute;
-  bottom: 200px;
+  bottom: 270px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -443,12 +443,12 @@
   border: none;
   outline: 0px;
   position: absolute;
-  bottom: 100px;
+  bottom: 170px;
   left: 0;
 }
 #main-contact #form-contact .form .form__email .lbl {
   position: absolute;
-  bottom: 100px;
+  bottom: 170px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -499,12 +499,12 @@
   border: none;
   outline: 0px;
   position: absolute;
-  bottom: 0px;
+  bottom: 70px;
   left: 0;
 }
 #main-contact #form-contact .form .form__message .lbl {
   position: absolute;
-  bottom: 0px;
+  bottom: 70px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -541,6 +541,30 @@
 #main-contact #form-contact .form .form__message input:focus + .lbl::after, #main-contact #form-contact .form .form__message input:valid + .lbl::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+#main-contact #form-contact .form .form__button input {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px 20px;
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  outline: none;
+  background: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#main-contact #form-contact .form .form__button input:hover {
+  color: #5FDBFF;
+  border: 1px solid #5FDBFF;
+}
+#main-contact #form-contact .form .form__button input:focus {
+  color: #040402;
+  font-weight: bold;
+  background-color: #5FDBFF;
+  border: 1px solid #5FDBFF;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #footer-contact #section-items .item a {
