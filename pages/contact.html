@@ -71,28 +71,17 @@
         </section>
         <!-- FORMULARIO DE CONTACTO -->
         <section id="form-contact" class="container">
-            <form action="varlidar.php" method="get" enctype="multipart/form-data">
-                <div class="d-flex flex-column justify-content-center align-items-center" id="form">
-                    <!-- NOMRBRE -->
-                    <div class="form-content d-flex flex-column flex-wrap justify-content-center">
-                        <label class="form__label" for="nombre">Name</label>
-                        <input class="form__input" id ="nombre" name="nombre" type="text" minlength="3" maxlength="50" required autofocus autocomplete="off">
-                    </div>
-                    <!-- MAIL -->
-                    <div class="form-content d-flex flex-column flex-wrap justify-content-center">
-                        <label class="form__label" for="mail">Email</label>
-                        <input class="form__input" id="mail" name="mail" type="email" required>
-                    </div>
-                    <!-- COMENTTARY -->
-                    <div class="form-content d-flex flex-column flex-wrap justify-content-center">
-                        <label class="form__label" for="comentario">Message</label>
-                        <textarea class="form__textarea" name="comentario" id="comentario"></textarea>
-                    </div>
-                    <!-- BUTTONS -->
-                    <div class="form-content mt-4" class="d-flex flex-column flex-wrap justify-content-center">
-                        <input id="enviar" type="submit" value="Enviar">
-                    </div>
+            <form class="form">
+                <!-- NOMBRE -->
+                <div class="form__name">
+                    <input id="lbl-name" type="text" required>
+                    <label for="lbl-name" class="lbl-name">
+                        <span class="text-name">
+                            Name
+                        </span>
+                    </label>
                 </div>
+                <!-- EMAIL -->
             </form>
         </section>
         <footer id="footer-contact" class="container-fluid d-flex align-items-center mt-5">
