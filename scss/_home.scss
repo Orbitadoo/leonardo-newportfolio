@@ -1,3 +1,13 @@
+@keyframes sphere {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
 #body-home {
     background-image: url(../assets/bg.png);
     background-attachment: fixed;
@@ -8,7 +18,7 @@
 #main-home {
     min-height: 100vh;
     #main-pic {
-        img {
+        #pic {
             height: 290px;
             @include mv (1200px) {
                 height: 250px;
@@ -20,6 +30,11 @@
             &:hover {
                 transform: scale(1.05);
             }
+            
+            animation-name: sphere;
+            animation-duration: 30seg;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     }
     #main-headings {

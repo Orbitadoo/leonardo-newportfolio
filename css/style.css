@@ -55,6 +55,26 @@
 }
 
 /*=========================HOME=========================*/
+@-webkit-keyframes sphere {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+@keyframes sphere {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
 #body-home {
   background-image: url(../assets/bg.png);
   background-attachment: fixed;
@@ -66,22 +86,30 @@
 #main-home {
   min-height: 100vh;
 }
-#main-home #main-pic img {
+#main-home #main-pic #pic {
   height: 290px;
   -webkit-transition: 200ms;
   transition: 200ms;
+  -webkit-animation-name: sphere;
+          animation-name: sphere;
+  -webkit-animation-duration: 30seg;
+          animation-duration: 30seg;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @media screen and (max-width: 1200px) {
-  #main-home #main-pic img {
+  #main-home #main-pic #pic {
     height: 250px;
   }
 }
 @media screen and (max-width: 576px) {
-  #main-home #main-pic img {
+  #main-home #main-pic #pic {
     height: 210px;
   }
 }
-#main-home #main-pic img:hover {
+#main-home #main-pic #pic:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
