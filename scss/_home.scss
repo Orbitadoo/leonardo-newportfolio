@@ -1,11 +1,25 @@
 @keyframes sphere {
-    from {
-        transform: rotateZ(0deg);
+    0% {
+        transform: translateY(0%);
     }
 
-    to {
-        transform: rotateZ(360deg);
+    50% {
+        transform: translateY(-10%);
     }
+
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
 }
 
 #body-home {
@@ -28,13 +42,10 @@
             }
             transition: 200ms;
             &:hover {
-                transform: scale(1.05);
+                transform: scale(1.1);
             }
             
-            animation-name: sphere;
-            animation-duration: 30seg;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            animation: sphere 3s alternate infinite;
         }
     }
     #main-headings {
@@ -64,6 +75,14 @@
             @include mv (576px) {
                 font-size: 32px;
             }
+
+            display: block;
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 17ch;
+            overflow: hidden;
+
+            animation: typing 2s steps(17), blink .5s infinite step-end alternate;
         }
         #heading-after {
             margin: 0;
