@@ -284,6 +284,40 @@
 #main-about #section-about #article-about .skills .skills__items .skills__items__icon .under-icon {
   font-size: 16px;
 }
+#main-about #section-about #article-about .slider .heading {
+  color: #8E8E8E;
+}
+#main-about #section-about #article-about .slider .carousel.slide {
+  width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  #main-about #section-about #article-about .slider .carousel.slide {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main-about #section-about #article-about .slider .carousel.slide {
+    width: 100%;
+  }
+}
+#main-about #section-about #article-about .slider .carousel.slide .carousel .carousel__heading img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+#main-about #section-about #article-about .slider .carousel.slide .carousel .carousel__heading h5 {
+  font-size: 18px;
+  color: #f5f5f5;
+}
+#main-about #section-about #article-about .slider .carousel.slide .carousel .carousel__paragraph {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  color: #8E8E8E;
+}
 
 /*=========================SERVICES=========================*/
 #body-services {

@@ -75,6 +75,47 @@
                     }
                 }
             }
+            // CARROUSEL DE TESTIMONIOS
+            .slider {
+                .heading {
+                    color: map-get($color, "secondary-text" );
+                }
+
+                .carousel.slide {
+                    width: 50%;
+
+                    @include mv (1200px) {
+                        width: 75%;
+                    }
+                    
+                    @include mv (768px) {
+                        width: 100%;
+                    }
+
+                    .carousel {
+                        .carousel__heading {
+                            img {
+                                box-sizing: content-box;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100%;
+                            }
+    
+                            h5 {
+                                font-size: 18px;
+                                color: map-get($color, "white");
+                            }
+                        }
+                        .carousel__paragraph {
+                            box-sizing: border-box;
+                            padding: 10px;
+                            font-size: 16px;
+                            color: map-get($color, "secondary-text" );
+                        }
+                    }
+                }
+
+            }
         }
     }
 }
