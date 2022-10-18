@@ -3,7 +3,7 @@
 }
 
 #main-contact {
-    min-height: 100vh;
+    min-height: 85vh;
     // ENCABEZADO
     #section-heading {
         @include heading;
@@ -71,8 +71,8 @@
 }
     // FOOTER CONTACTO
     #footer-contact {
-        background-color: map-get($color, "black");
-        max-height: 160px;
+        background-color: map-get($color, "background-cards");
+        min-height: 15vh;
         #section-copyright {
             p {
                 color: map-get($color, "white");
@@ -89,7 +89,7 @@
                 a i {
                     color: map-get($color, "white" );
                     font-size: 1.5em;
-                    background-color: map-get($color, "background-cards");
+                    background-color: map-get($color, "black");
                     padding: 15px;
                     border-radius: 4em;
 
@@ -101,7 +101,7 @@
                 }
                 a i:focus, a i:hover {
                     color: map-get($color, "primary");
-                    transform: scale(1.1) + translateY(-30%);
+                    transform: scale(1.1) + translateY(-15%);
                 }
             }
         }
